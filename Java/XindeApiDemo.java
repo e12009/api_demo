@@ -1,3 +1,12 @@
+/*
+ *本文件代码主要给用户演示以下内容：
+ *    1. 怎么生成访问信德数聚服务的url。可参考createTaskDemo或getTaskStatus方法。要注意如何生成time参数。
+ *    2. 如何对url签名。 可参考signUrl方法。客户可把该代码拷贝至自己的代码内使用。
+ *    3. 如何创建一个新任务。 这里用身份证二要素作为例子。
+ ×    4. 如何查询一个任务状态。
+ *
+ */
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStream;
@@ -12,14 +21,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
 
-/*
- *本文件代码主要给用户演示以下内容：
- *    1. 怎么生成访问信德数聚服务的url。可参考createTaskDemo或getTaskStatus方法。要注意如何生成time参数。
- *    2. 如何对url签名。 可参考signUrl方法。客户可把该代码拷贝至自己的代码内使用。
- *    3. 如何创建一个新任务。 这里用身份证二要素作为例子。
- ×    4. 如何查询一个任务状态。
- *
- */
 public class XindeApiDemo {
 
     public static void main( String[] args )
