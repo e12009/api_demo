@@ -101,13 +101,13 @@ def help():
     print "                  这个演示如何对一个API进行签名."
     print "                  <url> 待签名的URL。命令行输入时需要放在双引号内以避免解析错误。"
     print "                  <appSecret> 分配给客户的appSecret"
-    print "python XindeApiDemo.js -createTaskDemo <appId> <appSecret> <中文名> <身份证号>"
+    print "python XindeApiDemo.py -createTaskDemo <appId> <appSecret> <中文名> <身份证号>"
     print "                  这个演示怎么提交一个新任务来验证某个人的身份证和姓名是否匹配"
     print "                  <appId> 分配给客户的appid"
     print "                  <appSecret> 分配给客户的appSecret"
     print "                  <中文名> 待验证用户的中文名"
     print "                  <身份证号> 待验证用户的身份证号"
-    print "python XindeApiDemo.js -getTaskStatus <tid> <appId> <appSecret>"
+    print "python XindeApiDemo.py -getTaskStatus <tid> <appId> <appSecret>"
     print "                  这个演示怎么查询某个任务的状态"
     print "                  <tid> 在创建任务时得到的任务号。可使用createTaskDemo得到的task ID。"
     print "                  <appId> 分配给客户的appid"
@@ -115,7 +115,6 @@ def help():
     return
 
 #这段是主程序。用于接受命令行输入并调用相应的方法作处理。
-print('Enter main')
 cnt=len(sys.argv)
 if (cnt < 4) :
     help()
